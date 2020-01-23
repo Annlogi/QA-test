@@ -1,0 +1,98 @@
+{
+  "id": "ec968e54-8fd0-4b9f-b8b4-c5b1e81d332c",
+  "version": "2.0",
+  "name": "quest",
+  "url": "http://blog.csssr.ru/",
+  "tests": [{
+    "id": "a10477a8-97c7-491c-af93-47bef98cd723",
+    "name": "link",
+    "commands": [{
+      "id": "89d4ed14-36bc-4afd-81b5-38af27a69777",
+      "comment": "",
+      "command": "open",
+      "target": "/qa-engineer/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "926135f1-4faa-4394-bb53-26d0683de0f8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b3036662-8d67-4094-97f7-82b8506398cb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f172ac9d-5ebe-4921-a60f-51302c6f823b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА",
+      "targets": [
+        ["linkText=НАХОДИТЬ НЕСОВЕРШЕНСТВА", "linkText"],
+        ["css=.graphs-errors > a", "css:finder"],
+        ["xpath=//a[contains(text(),'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'НАХОДИТЬ НЕСОВЕРШЕНСТВА')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d035943-3b30-430e-92a1-2c07b12ee2f9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Софт для быстрого создания скриншотов",
+      "targets": [
+        ["linkText=Софт для быстрого создания скриншотов", "linkText"],
+        ["css=label > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Софт для быстрого создания скриншотов')]", "xpath:link"],
+        ["xpath=//a[@href='http://app.prntscr.com/ru/']", "xpath:href"],
+        ["xpath=//label/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Софт для быстрого создания скриншотов')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "623ba778-4194-4314-8b88-a69a98cae0c3",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "linkText=Софт для быстрого создания скриншотов",
+      "targets": [],
+      "value": "link"
+    }, {
+      "id": "0c651d7f-1bc8-47a6-88c5-33fb4ae0cb9e",
+      "comment": "",
+      "command": "verify",
+      "target": "link",
+      "targets": [],
+      "value": "http://monosnap.com/"
+    }]
+  }],
+  "suites": [{
+    "id": "191df019-62a0-4fd0-aa79-a961cdb2eaeb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://blog.csssr.ru/qa-engineer/"],
+  "plugins": []
+}
